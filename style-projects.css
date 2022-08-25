@@ -21,7 +21,7 @@ header {
 }
 
 #brand  {
-    height: 5.5vw;
+    height: 7vw;
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -41,3 +41,4 @@ nav a {
     text-decoration: none;
     margin: 0 0.7rem;
 }
+

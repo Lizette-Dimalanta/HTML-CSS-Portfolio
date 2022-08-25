@@ -15,17 +15,35 @@ body {
     overflow: hidden;
 }
 
+/*------------------------------ BACKGROUND ------------------------------*/
+.background {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*------------------------------ BUTTON ------------------------------*/
 #enter-button {
     margin-top: 3rem;
     transform: scale(0.7);
     border-radius: 50%;
 }
 
-main {
-    color: #d6c8c1;
+#enter-button:hover {
+
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px black;
+}
+
+/*------------------------------ TITLE/SUBTITLE ------------------------------*/
 h1{ 
+    color: #d6c8c1;
     font-weight: bold;
     font-size: 4rem;
     letter-spacing: 3px;
@@ -42,22 +60,23 @@ h2 {
     margin-bottom: 5rem;
 }
 
-.background {
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
+/*------------------------------ SOCIAL LINKS ------------------------------*/
+#social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px black;
+#social-links div {
+    justify-content: space-evenly;
 }
 
-
+/*------------------------------ FOOTER ------------------------------*/
+footer {
+    margin: 2rem;
+    color: grey;
+    font-size: 1.25rem;
+}
 /* 
 @media screen and (min-width: 500px) {
 
