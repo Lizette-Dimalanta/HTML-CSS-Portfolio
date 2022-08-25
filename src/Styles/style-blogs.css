@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
-@import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 * {
     font-family: 'Cormorant Garamond', serif;
@@ -40,9 +40,4 @@ nav a {
     color: #d6c8c1;
     text-decoration: none;
     margin: 0 0.7rem;
-}
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
 }
