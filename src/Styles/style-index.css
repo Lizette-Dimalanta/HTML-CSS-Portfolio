@@ -18,6 +18,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 /*------------------------------ BACKGROUND ------------------------------*/
@@ -36,9 +36,10 @@ body {
 
 /*------------------------------ BUTTON ------------------------------*/
 #enter-button {
-    margin-top: 3rem;
+    margin-top: 1rem;
     transform: scale(0.7);
     border-radius: 50%;
+    box-shadow: 5px 8px 8px black;
 }
 
 #enter-button .img-top {
@@ -60,7 +61,6 @@ body {
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 5px 5px 5px black;
 }
 
 /*------------------------------ TITLE/SUBTITLE ------------------------------*/
@@ -70,7 +70,7 @@ h1 {
     font-size: 4rem;
     letter-spacing: 3px;
     text-shadow: 4px 4px 5px black;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 h2 {
@@ -86,6 +86,12 @@ h2 {
 #social-links {
     flex-direction: row;
     align-items: center;
+    box-shadow: 5px 5px 5px black;
+}
+
+.img-default {
+    width: 4rem;
+    height: 4rem;
 }
 
 .Social {
@@ -98,6 +104,22 @@ h2 {
     width: 4rem;
     height: 4rem;
 }
+
+#social-links .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+
+#social-links:hover .img-top {
+    cursor: pointer;
+    display: inline;
+    animation: button-transition 0.2s reverse;
+}
+
 /*------------------------------ FOOTER ------------------------------*/
 footer {
     font-family: 'Lato', sans-serif;

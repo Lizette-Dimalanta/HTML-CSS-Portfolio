@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Proza+Libre:wght@400;600&display=swap');
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent 
+    }
+    50% {
+    border-color: #9e8679;
+    }
+}
 
 * {
     font-family: 'Cormorant Garamond', serif;
@@ -12,7 +31,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/*------------------------------ BACKGROUND ------------------------------*/
+.background {
+    background-color: #e6e3df;
+    background-size: cover;
+    background-repeat:  repeat;
+}
+/* ------------------------------- NAV BAR --------------------------------- */
 header {
     display: flex;
     align-items: center;
@@ -20,12 +45,13 @@ header {
     background-color: rgb(32, 32, 32);
 }
 
-#brand  {
-    height: 7vw;
+#brand {
+    height: 75px;
     border: none;
     cursor: pointer;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
 }
 
 nav {
@@ -42,7 +68,145 @@ nav a {
     margin: 0 0.7rem;
 }
 
-h1 {
-    text-align: center;
-    font-size: 3rem;
+nav a:nth-child(1) {
+    color: #938e8c;
+    text-decoration: underline;
+    font-size: 1.6rem;
 }
+/* ------------------------------- TITLE --------------------------------- */
+h1 {
+    display: block;
+    font-size: 2.5rem;
+}
+
+.c1 {
+    display: block;
+}
+
+.c2 {
+    display: block;
+  }
+
+.c3 {
+    display: block;
+}
+
+.c4 {
+    display: block;
+}
+
+h1 .type {
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: 'Proza Libre', sans-serif;
+    overflow: hidden;
+    /* border-right: .05em solid #e2e1e1; */
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 2s steps(50, end) forwards,
+      blink-caret .5s step-end infinite;
+}
+
+h1 .type2 {
+    margin-left: 5%;
+    font-family: 'Proza Libre', sans-serif;
+    overflow: hidden;
+    /* border-right: .05em solid #e2e1e1; */
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1.4s steps(35, end) forwards,
+      blink-caret .5s step-end infinite;
+    animation-delay: 1.3s;
+}
+
+h1 .type3 {
+    margin-left: 5%;
+    font-family: 'Proza Libre', sans-serif;
+    overflow: hidden;
+    /* border-right: .05em solid #e2e1e1; */
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1.3s steps(40, end) forwards,
+      blink-caret .5s step-end infinite;
+    animation-delay: 2.8s;
+}
+
+hr.solid {
+    margin: 2%;
+    border: 2px solid rgb(199, 196, 196);
+    width: 50%;
+}
+/* ------------------------------- PROFILE PICTURE --------------------------------- */
+.profile-picture {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    width: 30%;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255);
+}
+/* ------------------------------- ABOUT ME --------------------------------- */
+.introduction p {
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(68, 66, 65);
+}
+
+.testimonials h2 {
+    display: flex;
+    width: 50%;
+    margin-left: 11%;
+    margin-top: 20px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(43, 42, 42);
+}
+
+.testimonials li {
+    width: 50%;
+    margin-left: 5%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(94, 91, 90);
+}
+
+.interests h2 {
+    display: flex;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 30px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(43, 42, 42);
+}
+
+.interests p {
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(68, 66, 65);
+}
+
+hr.solid2 {
+    margin: 2%;
+    margin-top: 2%;
+    border: 2px solid rgb(199, 196, 196);
+}
+/* ------------------------------- PROFESSIONAL --------------------------------- */
+.exp-title h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+}
+
