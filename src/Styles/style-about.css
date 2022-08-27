@@ -131,9 +131,7 @@ h1 .type3 {
       blink-caret .5s step-end infinite;
     animation-delay: 2.8s;
 }
-
 /* ------------------------------- DIVIDERS --------------------------------- */
-
 hr.solid {
     margin: 2%;
     border: 2px solid rgb(199, 196, 196);
@@ -161,7 +159,7 @@ hr.solid4 {
 .profile-picture {
     position: absolute;
     display:inline-block;
-    top: 20%;
+    top: 14%;
     right: 8%;
     width: 30%;
     border-radius: 50%;

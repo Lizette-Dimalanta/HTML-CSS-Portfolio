@@ -27,13 +27,11 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 /*------------------------------ BACKGROUND ------------------------------*/
 .background {
     background-color: black;
     background-size: cover;
 }
-
 /*------------------------------ BUTTON ------------------------------*/
 #enter-button {
     margin-top: 1rem;
@@ -62,7 +60,6 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-
 /*------------------------------ TITLE/SUBTITLE ------------------------------*/
 h1 { 
     color: #d6c8c1;
@@ -81,7 +78,6 @@ h2 {
     text-shadow: 3px 3px 5px black;
     margin-bottom: 5rem;
 }
-
 /*------------------------------ SOCIAL LINKS ------------------------------*/
 #social-links {
     flex-direction: row;
@@ -119,7 +115,6 @@ h2 {
     display: inline;
     animation: button-transition 0.2s reverse;
 }
-
 /*------------------------------ FOOTER ------------------------------*/
 footer {
     font-family: 'Lato', sans-serif;
@@ -128,6 +123,8 @@ footer {
     font-size: 1.25rem;
     font-weight: 300;
 }
+
+
 /* 
 @media screen and (min-width: 500px) {
 
