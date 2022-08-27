@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
+
+@keyframes hover-transition {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 * {
     font-family: 'Cormorant Garamond', serif;
@@ -12,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* ------------------------------- NAV BAR --------------------------------- */
 header {
     display: flex;
     align-items: center;
@@ -27,6 +40,30 @@ header {
     overflow: hidden;
     border-radius: 50%;
 }
+/*------------------------------ BACKGROUND ------------------------------*/
+#background {
+    background-image: url(../Images/split-background.jpg), url(../Images/split-background-flipped.jpg);
+    background-repeat: no-repeat, repeat;
+    background-color: #e6e3df;
+    background-size: cover;
+}
+/* ------------------------------- NAV BAR --------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 3px 3px 3px rgba(65, 65, 65, 0.504);
+}
+
+#brand {
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+}
 
 nav {
     margin-left: auto;
@@ -38,6 +75,123 @@ nav a {
     font-size: 1.4rem;
     font-weight: bold;
     color: #d6c8c1;
-    text-decoration: none;
     margin: 0 0.7rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+nav a:nth-child(3) {
+    color: #938e8c;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+/* ------------------------------- TITLE --------------------------------- */
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 3rem;
+}
+/* ------------------------------- PROJECTS --------------------------------- */
+#container {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    margin: 2% 2% 2% 2%;
+}
+
+#container h2 {
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.4rem;
+    color: rgb(73, 72, 70);
+    width: 20rem;
+}
+
+#container .blog2 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -11% 0% 2% 0%;
+}
+
+#container .blog4 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -19% 0% 2% 0%;
+}
+
+#container .blog5 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -10% 0% 2% 0%;
+}
+
+#container h3 {
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    color: rgb(73, 72, 70);
+    width: 20rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column; 
+}
+
+.project img {
+    width: 20rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.492);
+}
+
+.description {
+    width: 20rem;
+    font-family: 'Proza Libre', sans-serif;
+    margin-top: 9%;
+    font-size: 1.3rem;
+    color: rgb(91, 88, 87);
+}
+/*------------------------------ HOVER ------------------------------*/
+div img:nth-child(2) {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+div:hover .img-hover {
+    display: inline;
+    transform: translateX(-100%);
+    animation: hover-transition 0.2s reverse;
+}
+
+div img {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+/*------------------------------ FOOTER ------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 6% 2% 2% 2%;
+    color: grey;
+    font-size: 1.25rem;
+    font-weight: 300;
 }

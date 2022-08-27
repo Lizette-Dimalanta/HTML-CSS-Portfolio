@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
 
 @keyframes hover-transition {
     0% {
@@ -92,9 +92,10 @@ h1 {
     margin-bottom: 3%;
     font-size: 3rem;
 }
-/* ------------------------------- PROJECTS --------------------------------- */
+/* ------------------------------- BLOGS --------------------------------- */
 #container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 2rem;
@@ -147,7 +148,6 @@ div img {
     overflow: hidden;
     
 }
-
 /*------------------------------ FOOTER ------------------------------*/
 footer {
     display: flex;
