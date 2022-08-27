@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Proza+Libre:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
 
 @keyframes typing {
     from {
@@ -36,7 +36,7 @@ body {
     background-image: url(../Images/split-background.jpg), url(../Images/split-background-flipped.jpg);
     background-repeat: no-repeat, repeat;
     background-color: #e6e3df;
-    background-size: cover;
+    background-size: contain;
 }
 /* ------------------------------- NAV BAR --------------------------------- */
 header {
@@ -299,5 +299,40 @@ hr.solid4 {
     text-decoration: none;
     color: #454242;
 }
-
 /* ------------------------------- PROFESSIONAL DESCRIPTION --------------------------------- */
+main h2 {
+    margin: 2.5% 0% 1.5% 5%;
+    font-family: 'Proza Libre', sans-serif;
+    color: rgb(43, 42, 42);
+}
+
+.prof-description p {
+    margin: 0% 5% 0% 5%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(68, 66, 65);
+}
+
+.prof-description em {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(68, 66, 65);
+}
+
+.quote p {
+    display: flex;
+    justify-content: center;
+    margin: 2% 5% 5% 5%;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(77, 68, 51);
+}
+/* ------------------------------- FOOTER --------------------------------- */
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-family: 'Libre Caslon Text', serif;
+    color: rgb(103, 101, 100);
+}
