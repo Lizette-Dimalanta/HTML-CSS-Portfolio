@@ -32,10 +32,11 @@ body {
     flex-direction: column;
 }
 /*------------------------------ BACKGROUND ------------------------------*/
-.background {
+#background {
+    background-image: url(../Images/split-background.jpg), url(../Images/split-background-flipped.jpg);
+    background-repeat: no-repeat, repeat;
     background-color: #e6e3df;
     background-size: cover;
-    background-repeat:  repeat;
 }
 /* ------------------------------- NAV BAR --------------------------------- */
 header {
@@ -43,6 +44,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: rgb(32, 32, 32);
+    box-shadow: 3px 3px 3px rgba(65, 65, 65, 0.504);
 }
 
 #brand {
@@ -64,8 +66,8 @@ nav a {
     font-size: 1.4rem;
     font-weight: bold;
     color: #d6c8c1;
-    text-decoration: none;
     margin: 0 0.7rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 nav a:nth-child(1) {
@@ -80,19 +82,15 @@ h1 {
 }
 
 .c1 {
-    display: block;
+    display: flexbox;
 }
 
 .c2 {
-    display: block;
+    display: flexbox;
   }
 
 .c3 {
-    display: block;
-}
-
-.c4 {
-    display: block;
+    display: flexbox;
 }
 
 h1 .type {
@@ -134,14 +132,35 @@ h1 .type3 {
     animation-delay: 2.8s;
 }
 
+/* ------------------------------- DIVIDERS --------------------------------- */
+
 hr.solid {
     margin: 2%;
     border: 2px solid rgb(199, 196, 196);
     width: 50%;
 }
+
+hr.solid2 {
+    margin: 2%;
+    margin-top: 2%;
+    border: 2px solid rgb(199, 196, 196);
+}
+
+hr.solid3 {
+    margin: 2% 0% -1% 15%;
+    border: 2px dotted rgb(199, 196, 196);
+    width: 70%;
+}
+
+hr.solid4 {
+    margin: -3% 0% 0% 15%;
+    border: 2px dotted rgb(199, 196, 196);
+    width: 70%;
+}
 /* ------------------------------- PROFILE PICTURE --------------------------------- */
 .profile-picture {
     position: absolute;
+    display:inline-block;
     top: 20%;
     right: 8%;
     width: 30%;
@@ -150,7 +169,7 @@ hr.solid {
 }
 /* ------------------------------- ABOUT ME --------------------------------- */
 .introduction p {
-    display: flex;
+    display: flexbox;
     width: 50%;
     margin-left: 5%;
     font-family: 'Proza Libre', sans-serif;
@@ -159,7 +178,7 @@ hr.solid {
 }
 
 .testimonials h2 {
-    display: flex;
+    display: flexbox;
     width: 50%;
     margin-left: 11%;
     margin-top: 20px;
@@ -170,7 +189,9 @@ hr.solid {
 
 .testimonials li {
     width: 50%;
+    display: flexbox;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem;
     font-weight: 700;
@@ -179,7 +200,6 @@ hr.solid {
 
 .interests h2 {
     display: flex;
-    width: 50%;
     margin-left: 15%;
     margin-top: 30px;
     font-family: 'Proza Libre', sans-serif;
@@ -191,18 +211,13 @@ hr.solid {
     display: flex;
     width: 50%;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Proza Libre', sans-serif;
     font-size: 1.2rem;
     color: rgb(68, 66, 65);
 }
-
-hr.solid2 {
-    margin: 2%;
-    margin-top: 2%;
-    border: 2px solid rgb(199, 196, 196);
-}
-/* ------------------------------- PROFESSIONAL --------------------------------- */
-.exp-title h1 {
+/* ------------------------------- PROFESSIONAL TITLE/LINKS --------------------------------- */
+#exp-title h1 {
     display: flex;
     justify-content: center;
     font-family: 'Proza Libre', sans-serif;
@@ -210,3 +225,79 @@ hr.solid2 {
     color: rgb(43, 42, 42);
 }
 
+#exp-title .contact-subheading {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: -50px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 200%;
+    font-weight: lighter;
+    color: rgb(43, 42, 42);
+}
+
+#prof-links {
+    display: block;
+    margin-top: -10px;
+}
+
+#prof-links a:nth-child(1) {
+    margin-left: 8%;
+}
+
+#prof-links a {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 5%;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #454242;
+}
+
+#prof-links .link-text {
+    display: inline-flex;
+    padding: 25px 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #454242;
+}
+
+#prof-links .phone {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 5%;
+    margin: 5% 5% 0 5%;
+}
+
+.phone p {
+    display: inline-flex;
+    flex-shrink: 0;
+    padding: 25px 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #454242;
+}
+
+#prof-links .email {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 5%;
+    margin: 0% 0% 0% 5%;
+}
+
+.email p {
+    display: inline-flex;
+    padding: 25px 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #454242;
+}
+
+/* ------------------------------- PROFESSIONAL DESCRIPTION --------------------------------- */
