@@ -111,7 +111,7 @@ h1 {
     width: 20rem;
 }
 
-#container .blog2 {
+#container .blog-2 {
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
     font-size: 1.7rem;
@@ -120,7 +120,7 @@ h1 {
     margin: -11% 0% 2% 0%;
 }
 
-#container .blog4 {
+#container .blog-4 {
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
     font-size: 1.7rem;
@@ -129,7 +129,7 @@ h1 {
     margin: -19% 0% 2% 0%;
 }
 
-#container .blog5 {
+#container .blog-5 {
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
     font-size: 1.7rem;
@@ -166,7 +166,7 @@ h1 {
     color: rgb(91, 88, 87);
 }
 /*------------------------------ HOVER ------------------------------*/
-div img:nth-child(2) {
+div a img:nth-child(1) {
     display: none;
     position: absolute;
     z-index: 99;
