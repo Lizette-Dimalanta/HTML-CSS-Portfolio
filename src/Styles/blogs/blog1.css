@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
+
+@keyframes hover-transition {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+* {
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* ------------------------------- NAV BAR --------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(32, 32, 32);
+}
+
+#brand  {
+    height: 7vw;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/*------------------------------ BACKGROUND ------------------------------*/
+#background {
+    background-image: url(../../Images/split-background.jpg), url(../../Images/split-background-flipped.jpg);
+    background-repeat: no-repeat, repeat;
+    background-color: #e6e3df;
+    background-size: contain;
+}
+/* ------------------------------- NAV BAR --------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 3px 3px 3px rgba(65, 65, 65, 0.504);
+}
+
+#brand {
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d6c8c1;
+    margin: 0 0.7rem;
+    text-shadow: 2px 2px 2px black;
+}
+/* ------------------------------- TITLES --------------------------------- */
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 3rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    color:rgb(46, 45, 44);
+    margin: 0% 10% 3% 10%;
+
+}
+/* ------------------------------- DIVIDERS --------------------------------- */
+hr.solid {
+    margin: 0% 5% 0% 5%;
+    border: 2px solid rgb(199, 196, 196);
+}
+
+hr.solid1 {
+    margin: 3% 10% 2% 10%;
+    border: 2px dotted rgb(199, 196, 196);
+}
+
+hr.solid2 {
+    margin: 0% 10% 3% 10%;
+    border: 2px dotted rgb(199, 196, 196);
+}
+/* ------------------------------- PROJECTS --------------------------------- */
+#container {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    margin: 2% 2% 2% 2%;
+}
+
+#container h2 {
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.4rem;
+    color: rgb(73, 72, 70);
+    width: 20rem;
+}
+
+#container .blog-2 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -11% 0% 2% 0%;
+}
+
+#container .blog-4 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -19% 0% 2% 0%;
+}
+
+#container .blog-5 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #454242;
+    width: 20rem;
+    margin: -10% 0% 2% 0%;
+}
+
+#container h3 {
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    color: rgb(73, 72, 70);
+    width: 20rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column; 
+}
+
+.project-main {
+    display: flex;
+    flex-direction: column; 
+}
+
+.project img {
+    width: 20rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.492);
+}
+
+.project-main img {
+    width: 50rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.492);
+}
+
+.description {
+    width: 20rem;
+    font-family: 'Proza Libre', sans-serif;
+    margin-top: 9%;
+    font-size: 1.3rem;
+    color: rgb(91, 88, 87);
+}
+
+.description-main {
+    width: 50rem;
+    font-family: 'Proza Libre', sans-serif;
+    margin: 6% 0% 0% 0%;
+    font-size: 1.3rem;
+    color: rgb(91, 88, 87);
+}
+
+.topic-date-read {
+    width: 50rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 7% 5% 0% 5%;
+    font-size: 1.3rem;
+    color: rgb(114, 111, 110);
+}
+/*------------------------------ HOVER ------------------------------*/
+div a img:nth-child(1) {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+div:hover .img-hover {
+    display: inline;
+    transform: translateX(-100%);
+    animation: hover-transition 0.2s reverse;
+}
+
+div img {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+/*------------------------------ FOOTER ------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 6% 2% 2% 2%;
+    color: grey;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
