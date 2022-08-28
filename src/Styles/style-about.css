@@ -139,19 +139,19 @@ hr.solid {
 }
 
 hr.solid2 {
-    margin: 2%;
-    margin-top: 2%;
+    margin: 0% 37% 0%;
     border: 2px solid rgb(199, 196, 196);
+    width: 26%;
 }
 
 hr.solid3 {
-    margin: 2% 0% -1% 15%;
+    margin: 4% 15% 0%;
     border: 2px dotted rgb(199, 196, 196);
     width: 70%;
 }
 
 hr.solid4 {
-    margin: -3% 0% 0% 15%;
+    margin: -3% 0% 4% 15%;
     border: 2px dotted rgb(199, 196, 196);
     width: 70%;
 }
@@ -159,7 +159,7 @@ hr.solid4 {
 .profile-picture {
     position: absolute;
     display:inline-block;
-    top: 14%;
+    top: 20%;
     right: 8%;
     width: 30%;
     border-radius: 50%;
@@ -324,7 +324,7 @@ main h2 {
     font-family: 'Libre Caslon Text', serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: rgb(77, 68, 51);
+    color: rgb(82, 78, 73);
 }
 /* ------------------------------- FOOTER --------------------------------- */
 footer p {

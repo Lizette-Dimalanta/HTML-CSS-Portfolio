@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Proza+Libre:ital,wght@0,400;1,600&display=swap');
 
 @keyframes button-transition {
     0% {
@@ -13,12 +14,23 @@
     }
 }
 
+@keyframes social-link-hover {
+   0% {
+        width: 7rem;
+    }
+    30% {
+        width: 9rem;
+    }
+    100% {
+        width: 7rem;
+    }
+}
+
 * {
     font-family: 'Cormorant Garamond', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 body {
@@ -28,9 +40,12 @@ body {
     justify-content: center;
 }
 /*------------------------------ BACKGROUND ------------------------------*/
-.background {
+#background {
+    background-image: url(../Images/BW-leaves-background.jpg);
     background-color: black;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 150%;
 }
 /*------------------------------ BUTTON ------------------------------*/
 #enter-button {
@@ -38,6 +53,7 @@ body {
     transform: scale(0.7);
     border-radius: 50%;
     box-shadow: 5px 8px 8px black;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #enter-button .img-top {
@@ -62,58 +78,43 @@ body {
 }
 /*------------------------------ TITLE/SUBTITLE ------------------------------*/
 h1 { 
-    color: #d6c8c1;
+    color: #e2dedb;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 6rem;
     letter-spacing: 3px;
     text-shadow: 4px 4px 5px black;
     margin-top: 2rem;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #9e8679;
+    color: #776c68;
     text-shadow: 3px 3px 5px black;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 /*------------------------------ SOCIAL LINKS ------------------------------*/
-#social-links {
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 5px 5px 5px black;
-}
-
-.img-default {
-    width: 4rem;
-    height: 4rem;
-}
-
-.Social {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1rem;
-}
-
-.Social-end {
-    width: 4rem;
-    height: 4rem;
-}
-
-#social-links .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.footerlinks {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
-#social-links:hover .img-top {
-    cursor: pointer;
-    display: inline;
-    animation: button-transition 0.2s reverse;
+a .social {
+    width: 7rem;
+}
+
+.instagram {
+    margin-top: 8px;
+}
+
+.social:hover {
+    animation: social-link-hover 5s forwards;
 }
 /*------------------------------ FOOTER ------------------------------*/
 footer {
@@ -134,8 +135,3 @@ footer {
     
 } */
 
-/* #main {
-    background-image: 
-        url("concrete-background.jpg") black repeat scroll;
-    background-size: cover;
-} */
