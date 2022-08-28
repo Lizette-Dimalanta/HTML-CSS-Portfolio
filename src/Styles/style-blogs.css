@@ -92,6 +92,16 @@ h1 {
     margin-bottom: 3%;
     font-size: 3rem;
 }
+/* ------------------------------- DIVIDERS --------------------------------- */
+hr.solid1 {
+    margin: 0% 10% 4% 10%;
+    border: 2px dotted rgb(199, 196, 196);
+}
+
+hr.solid2 {
+    margin: 4% 10% 0% 10%;
+    border: 2px dotted rgb(199, 196, 196);
+}
 /* ------------------------------- PROJECTS --------------------------------- */
 #container {
     display: flex;
