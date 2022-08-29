@@ -248,3 +248,48 @@ footer {
     font-size: 1.25rem;
     font-weight: 300;
 }
+/*------------------------------ MEDIA QUERIES ------------------------------*/
+@media screen and (max-width: 1664px) {
+    .description {
+        margin-bottom: 20%;
+    }
+    .project-main img {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .project-main img {
+        margin-left: 2rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-105%);
+    }
+    .description-main {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .project-main img {
+        width: 25rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-108%);
+    }
+    .description-main {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .project-main img {
+        width: 25rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-108%);
+    }
+    .description-main {
+        width: 30rem;
+    }
+}

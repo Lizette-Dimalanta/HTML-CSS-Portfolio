@@ -187,7 +187,6 @@ hr.solid4 {
 
 .testimonials li {
     width: 50%;
-    display: flexbox;
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Cormorant Garamond', serif;
@@ -333,4 +332,24 @@ footer p {
     margin-bottom: 3%;
     font-family: 'Libre Caslon Text', serif;
     color: rgb(103, 101, 100);
+}
+
+/* ------------------------------- MEDIA QUERIES --------------------------------- */
+@media screen and (max-width: 1670px) {
+    .interests p {
+        width: 100%;
+    }
+    .interests h2 {
+        justify-content: center;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 1372px) {
+    .interests p {
+        width: 90%;
+    }
+    .testimonials li {
+        width: 90%;
+    }
 }

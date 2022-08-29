@@ -172,7 +172,7 @@ hr.solid2 {
     width: 20rem;
     font-family: 'Proza Libre', sans-serif;
     margin-top: 9%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgb(91, 88, 87);
 }
 /*------------------------------ HOVER ------------------------------*/
@@ -203,4 +203,11 @@ footer {
     color: grey;
     font-size: 1.25rem;
     font-weight: 300;
+}
+
+/*------------------------------ MEDIA QUERIES ------------------------------*/
+@media screen and (max-width: 1664px) {
+    .description {
+        margin-bottom: 20%;
+    }
 }

@@ -82,6 +82,7 @@ nav a {
 h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 3%;
     font-size: 3rem;
 }
@@ -89,6 +90,7 @@ h1 {
 h2 {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 2.8rem;
     color:rgb(46, 45, 44);
     margin: 0% 10% 3% 10%;
@@ -240,4 +242,52 @@ footer {
     color: grey;
     font-size: 1.25rem;
     font-weight: 300;
+}
+/*------------------------------ MEDIA QUERIES ------------------------------*/
+@media screen and (max-width: 1664px) {
+    .description {
+        margin-bottom: 20%;
+    }
+    .project-main img {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .project-main img {
+        margin-left: 2rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-105%);
+    }
+    .description-main {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .project-main img {
+        width: 25rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-108%);
+    }
+    .description-main {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .project-main img {
+        width: 25rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-108%);
+    }
+    .description-main {
+        width: 30rem;
+    }
 }
