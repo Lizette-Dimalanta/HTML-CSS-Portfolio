@@ -159,7 +159,7 @@ hr.solid4 {
 .profile-picture {
     position: absolute;
     display:inline-block;
-    top: 30%;
+    margin-top: 10%;
     right: 8%;
     width: 30%;
     border-radius: 50%;
@@ -336,7 +336,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 1372px) {
+@media screen and (max-width: 1340px) {
     .interests p {
         width: 90%;
     }
@@ -373,10 +373,22 @@ footer p {
         margin: 0 0 5% 20%;
     }
     .profile-picture {
-        top: 25%;
+        margin-top: 25%;
         width: 35%;
     }
     #prof-links .link-text {
         display: none;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .profile-picture {
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .profile-picture {
+        margin-top: 50%;
     }
 }
