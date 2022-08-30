@@ -85,7 +85,11 @@ The following is a subsection of the blogs page, in which features the selected 
 -----
 
 **Browsers:** Firefox, Chrome
+
 **Programming Languages:** HTML & CSS
+
 **Sitemap/Wireframes:** Figma
+
 **Repository:** GitHub
+
 **Deployment & Hosting:** GitHub Pages
