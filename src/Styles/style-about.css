@@ -145,21 +145,21 @@ hr.solid2 {
 }
 
 hr.solid3 {
-    margin: 4% 15% 0%;
+    margin: 4% 25% 0%;
     border: 2px dotted rgb(199, 196, 196);
-    width: 70%;
+    width: 50%;
 }
 
 hr.solid4 {
-    margin: -3% 0% 4% 15%;
+    margin: -3% 0% 4% 25%;
     border: 2px dotted rgb(199, 196, 196);
-    width: 70%;
+    width: 50%;
 }
 /* ------------------------------- PROFILE PICTURE --------------------------------- */
 .profile-picture {
     position: absolute;
     display:inline-block;
-    top: 20%;
+    top: 30%;
     right: 8%;
     width: 30%;
     border-radius: 50%;
@@ -226,27 +226,24 @@ hr.solid4 {
     display: flex;
     justify-content: center;
     margin-top: 35px;
-    margin-bottom: -50px;
     font-family: 'Proza Libre', sans-serif;
     font-size: 200%;
+    text-decoration: underline;
     font-weight: lighter;
     color: rgb(43, 42, 42);
+    margin-bottom: 1%;
 }
 
 #prof-links {
-    display: block;
-    margin-top: -10px;
-}
-
-#prof-links a:nth-child(1) {
-    margin-left: 8%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #prof-links a {
     display: inline-flex;
-    justify-content: space-between;
-    width: 5%;
-    margin: 0% 5% 5% 5%;
+    width: 4%;
+    margin: 1% 5% 5% 3%;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 1rem;
@@ -257,44 +254,34 @@ hr.solid4 {
 
 #prof-links .link-text {
     display: inline-flex;
-    padding: 25px 10px 10px;
+    margin: 25px 10px 10px;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
     color: #454242;
 }
 
-#prof-links .phone {
+#contact-details {
     display: inline-flex;
-    justify-content: space-between;
-    width: 5%;
-    margin: 5% 5% 0 5%;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.phone p {
-    display: inline-flex;
-    flex-shrink: 0;
-    padding: 25px 10px 10px;
+#contact-details p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
     color: #454242;
+    transform: translateY(15px);
 }
 
-#prof-links .email {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 5%;
-    margin: 0% 0% 0% 5%;
+#contact-details img {
+    width: 3rem;
+    margin-right: 10px;
 }
 
-.email p {
-    display: inline-flex;
-    padding: 25px 10px 10px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #454242;
+#contact-details .email {
+    margin-left: 1%;
 }
 /* ------------------------------- PROFESSIONAL DESCRIPTION --------------------------------- */
 main h2 {
@@ -319,6 +306,7 @@ main h2 {
 .quote p {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 2% 5% 5% 5%;
     font-family: 'Libre Caslon Text', serif;
     font-size: 1.5rem;
@@ -343,6 +331,9 @@ footer p {
         justify-content: center;
         margin-left: 0%;
     }
+    .profile-picture {
+        top: 12%;
+    }
 }
 
 @media screen and (max-width: 1372px) {
@@ -351,5 +342,41 @@ footer p {
     }
     .testimonials li {
         width: 90%;
+    }
+    #prof-links a {
+        margin-right: 9%
+    }
+}
+
+@media screen and (max-width: 1101px) {
+    .testimonials h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 20px;
+        font-family: 'Proza Libre', sans-serif;
+        font-size: 1.7rem;
+        color: rgb(43, 42, 42);
+    }
+    #prof-links a {
+        margin-right: 15%;
+        margin-top: 2%;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #prof-links {
+        width: 70%;
+        margin: 0 0 5% 20%;
+    }
+    .profile-picture {
+        top: 25%;
+        width: 35%;
+    }
+    #prof-links .link-text {
+        display: none;
     }
 }

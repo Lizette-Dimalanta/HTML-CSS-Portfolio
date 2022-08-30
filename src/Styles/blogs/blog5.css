@@ -296,3 +296,18 @@ footer {
         width: 30rem;
     }
 }
+
+@media screen and (max-width: 552px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .project-main img {
+        width: 25rem;
+    }
+    .project-main:hover .img-hover {
+        transform: translateX(-108%);
+    }
+    .description-main {
+        width: 30rem;
+    }
+}
