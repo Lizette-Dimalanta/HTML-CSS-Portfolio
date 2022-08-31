@@ -2,7 +2,7 @@
 
 ## Portfolio Website
 
-## [Portfolio] (https://630f5c86dd884a0e2997fad9--lizettedimalanta.netlify.app/)
+## [Portfolio](https://630f5c86dd884a0e2997fad9--lizettedimalanta.netlify.app/)
 
 ## GitHub Repo
 
