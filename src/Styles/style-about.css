@@ -363,15 +363,19 @@ footer p {
     #prof-links a {
         margin-right: 15%;
         margin-top: 2%;
-        width: 10rem;
+        /* width: rem; */
     }
 }
 
 @media screen and (max-width: 769px) {
-    #prof-links {
-        width: 70%;
-        margin: 0 0 5% 20%;
+    #prof-links img {
+        transform: scale(2);
+    
     }
+    hr.solid4 {
+        margin-top: 1%;
+    }
+
     .profile-picture {
         margin-top: 25%;
         width: 35%;
@@ -379,6 +383,11 @@ footer p {
     #prof-links .link-text {
         display: none;
     }
+    /* #prof-links img {
+        margin-right: 15%;
+        margin-top: 2%;
+        width: 60rem;
+    } */
 }
 
 @media screen and (max-width: 704px) {
@@ -389,6 +398,6 @@ footer p {
 
 @media screen and (max-width: 552px) {
     .profile-picture {
-        margin-top: 50%;
+        margin-top: 50 %;
     }
 }

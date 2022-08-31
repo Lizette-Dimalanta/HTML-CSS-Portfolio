@@ -18,7 +18,7 @@
    0% {
         width: 7rem;
     }
-    30% {
+    40% {
         width: 9rem;
     }
     100% {
@@ -115,7 +115,7 @@ a .social {
 }
 
 .social:hover {
-    animation: social-link-hover 5s forwards;
+    animation: social-link-hover 1.5s forwards;
 }
 /*------------------------------ FOOTER ------------------------------*/
 footer {
