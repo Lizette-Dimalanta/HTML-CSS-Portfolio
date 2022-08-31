@@ -28,7 +28,7 @@ Containing 4 main pages, the site allows for easy navigation using the top navba
 
 The homepage is designed with the intention of attracting the target audience with the first interaction with the site. This contains hyperlinks in image form, and an added pseudo-class to the large logo button that allows the user to enter the site.
 
-## About Me
+## About
 
 This section acts as a main page, introducing primary information in relation to my personality/interests, professional background and contact details and links. The use of semantic elements and media queries are the primary components of this section (including flexbox, keyframes and a nav bar).
 
@@ -66,11 +66,11 @@ The following is a subsection of the blogs page, in which features the selected 
 
 ![About Me](docs/About%20Me.png)
 
-## Projects
+## Project List
 
 ![Projects](docs/Projects.png)
 
-## Blogs
+## Blog List
 
 ![Blogs](docs/Blogs.png)
 
