@@ -1,9 +1,5 @@
 # **T1A2**: Portfolio Documentation
 
-## Portfolio Website
-
-## [text](link)
-
 ## GitHub Repo
 
 ## [LizetteDimalanta_T1A2](https://github.com/Lizette-Dimalanta/LizetteDimalanta_T1A2)
