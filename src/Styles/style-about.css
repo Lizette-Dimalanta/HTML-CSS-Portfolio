@@ -98,7 +98,6 @@ h1 .type {
     margin-left: 5%;
     font-family: 'Proza Libre', sans-serif;
     overflow: hidden;
-    /* border-right: .05em solid #e2e1e1; */
     white-space: nowrap; 
     width: 0;
     animation: 
@@ -110,7 +109,6 @@ h1 .type2 {
     margin-left: 5%;
     font-family: 'Proza Libre', sans-serif;
     overflow: hidden;
-    /* border-right: .05em solid #e2e1e1; */
     white-space: nowrap; 
     width: 0;
     animation: 
@@ -123,7 +121,6 @@ h1 .type3 {
     margin-left: 5%;
     font-family: 'Proza Libre', sans-serif;
     overflow: hidden;
-    /* border-right: .05em solid #e2e1e1; */
     white-space: nowrap; 
     width: 0;
     animation: 
@@ -167,7 +164,7 @@ hr.solid4 {
 }
 /* ------------------------------- ABOUT ME --------------------------------- */
 .introduction p {
-    display: flexbox;
+    display: flex;
     width: 50%;
     margin-left: 5%;
     font-family: 'Proza Libre', sans-serif;
@@ -176,7 +173,7 @@ hr.solid4 {
 }
 
 .testimonials h2 {
-    display: flexbox;
+    display: flex;
     width: 50%;
     margin-left: 11%;
     margin-top: 20px;
@@ -363,7 +360,6 @@ footer p {
     #prof-links a {
         margin-right: 15%;
         margin-top: 2%;
-        /* width: rem; */
     }
 }
 
@@ -383,11 +379,6 @@ footer p {
     #prof-links .link-text {
         display: none;
     }
-    /* #prof-links img {
-        margin-right: 15%;
-        margin-top: 2%;
-        width: 60rem;
-    } */
 }
 
 @media screen and (max-width: 704px) {

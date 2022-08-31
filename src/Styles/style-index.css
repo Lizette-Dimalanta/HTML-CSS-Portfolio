@@ -143,19 +143,6 @@ footer {
 }
 
 @media screen and (max-width: 788px) {
-    #enter-button {
-        margin-top: 8rem;
-    }
-    h1 {
-        font-size:4rem;
-    }
-    a .social {
-        width: 6rem;
-    }
-    #background {
-        background-image: url(../Images/BW-leaves-background2.jpg);
-        background-size: 150%;
-    }
     .social-links {
         width: 500px;
     }
@@ -175,10 +162,6 @@ footer {
     }
     a .social {
         width: 5rem;
-    }
-    #background {
-        background-image: url(../Images/BW-leaves-background2.jpg);
-        background-size: 150%;
     }
     .social-links {
         width: 390px;
