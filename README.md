@@ -64,7 +64,7 @@ The following is a subsection of the blogs page, in which features the selected 
 
 ## About Me
 
-![About Me](docs/About%20Me.png)
+![About Me](docs/About_Me.png)
 
 ## Project List
 
@@ -76,7 +76,7 @@ The following is a subsection of the blogs page, in which features the selected 
 
 ## Blog Post
 
-![Blog Post](docs/Blog%20Post.png)
+![Blog Post](docs/Blog_Post.png)
 
 -----
 
